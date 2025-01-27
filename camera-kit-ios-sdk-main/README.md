@@ -132,11 +132,8 @@ extension MyViewController: LensRepositorySpecificObserver {
 }
 ```
 
-## Samples
-We provide several sample apps that demonstrate different approaches to integrating the Camera Kit SDK:
-- [CameraKitBasicSample](./Samples/CameraKitBasicSample) implements the bare minimum to show a single lens
+## Sample
 - [CameraKitSample](./Samples/CameraKitSample) contains a fully functioning camera capture with lenses and preview flow
-- [CameraKitAlternateCarouselSample](./Samples/CameraKitAlternateCarouselSample) demonstrates how to build your own carousel and preview screen
 
 ## License
 Camera Kit for iOS is available under a custom license. See the [LICENSE](./LICENSE) file for more info.
