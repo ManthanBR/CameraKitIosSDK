@@ -1,13 +1,11 @@
 <div align="center">
  
-![camerakit_icon](https://github.com/user-attachments/assets/036e42d2-c99f-45bc-ac0a-fe2fc462b6eb)
 
 # Camera Kit for iOS
 
-[Home Page](https://developers.snap.com/camera-kit/home) | [Documentation & Guides](https://developers.snap.com/camera-kit/getting-started/what-is-camera-kit) | [Showcase](https://ar.snap.com/camera-kit) | [API Reference](https://kit.snapchat.com/reference/CameraKit/ios/1.37.0/index.html) | [Developer Portal](https://kit.snapchat.com/manage/) | [My Lenses](https://my-lenses.snapchat.com/) | [Discord](https://discord.gg/snapar)
 </div>
 
-Camera Kit brings the power of Snap's AR platform to your websites and mobile apps on iOS and Android. It has never been easier to create and deliver scalable, multi-platform AR experiences to meet your customers, wherever they are.
+Camera Kit brings the power of AR platform to your websites and mobile apps on iOS and Android. It has never been easier to create and deliver scalable, multi-platform AR experiences to meet your customers, wherever they are.
 
 <p align="center">
  <img src="https://github.com/user-attachments/assets/4a6174c1-c6fd-47ff-826e-f48afc067331" width="9%" alt="distort" />
@@ -28,8 +26,7 @@ Camera Kit brings the power of Snap's AR platform to your websites and mobile ap
 - Body / Face / Hand Tracking
 - World Tracking
 - Background Segmentation
-- Location AR
-- and [many more](https://developers.snap.com/camera-kit/ar-content/ar-overview) 
+- Location AR 
 
 ### iOS SDK
 - Integrate with AVCaptureSession, which allows to maintain full control over session configuration, management, and lifecycle
@@ -39,9 +36,7 @@ Camera Kit brings the power of Snap's AR platform to your websites and mobile ap
 - Supports iOS 13.0+
 
 ## Integration Steps
-1. [Setup](https://developers.snap.com/camera-kit/getting-started/setting-up-accounts) your Camera Kit application using [Developer Portal](https://kit.snapchat.com/manage)
-2. [Integrate](https://developers.snap.com/camera-kit/integrate-sdk/mobile/ios) Camera Kit SDK into your iOS application
-3. [Create](https://developers.snap.com/camera-kit/ar-content/build-lenses) AR experiences using [Lens Studio](https://ar.snap.com/lens-studio) and manage them using [My Lenses](https://my-lenses.snapchat.com/) site
+1. Integrate Camera Kit SDK into your iOS application
 
 ## Modules
 
@@ -52,7 +47,7 @@ A set of [open-sourced](./Sources), reusable UI components and utilities for eas
 - `SCSDKCameraKitReferenceUI`
 - `SCSDKCameraKitReferenceSwiftUI`
 
-Modules required for testing your in-development lenses (see [Push-to-Device](https://developers.snap.com/camera-kit/guides/mobile-customization/in-app-lens-testing)):
+Modules required for testing your in-development lenses 
 - `SCSDKCameraKitBaseExtension`
 - `SCSDKCameraKitLoginKitAuth`
 - `SCSDKCameraKitPushToDeviceExtension`
@@ -60,7 +55,7 @@ Modules required for testing your in-development lenses (see [Push-to-Device](ht
 ## Installation
 ### [Swift Package Manager](https://github.com/apple/swift-package-manager)
 1. In Xcode, select "File" → "Add Package Dependencies…"
-2. Enter the repository URL: `https://github.com/Snapchat/camera-kit-ios-sdk.git`
+2. Enter the repository URL
 3. Select the version and modules you want to use in your project
 
 ### [CocoaPods](https://cocoapods.org/)
@@ -76,16 +71,11 @@ pod 'SCCameraKitReferenceUI'
 pod 'SCCameraKitReferenceSwiftUI'
 ```
 
-### Manual
-1. Download the binaries from the [Releases](https://github.com/Snapchat/camera-kit-ios-sdk/releases) section
-2. Unzip and add the Camera Kit SDK .xcframework to your Xcode project
-3. In your target's "General" settings, add the framework to the "Frameworks, Libraries, and Embedded Content" section
 
-## Usage
-You can find a more detailed tutorial [here](https://developers.snap.com/camera-kit/guides/tutorials/mobile-tutorials/building-your-first-ios-camera-kit-app)
 
-### Initializing Camera Kit
-Obtain an API token for your Camera Kit application on [Developer Portal](https://kit.snapchat.com/manage)
+
+
+
 
 ```swift
 import SCSDKCameraKit
@@ -115,7 +105,6 @@ DispatchQueue.global(qos: .background).async {
 ```
 
 ### Applying AR Lens
-You can find lens group IDs and specific lens IDs on [My Lenses](https://my-lenses.snapchat.com/) site
 ```swift
 // Observe a particular lens
 cameraKit.lenses.repository.addObserver(self, specificLensID: "<LENS_ID>", inGroupID: "<LENS_GROUP_ID>")
